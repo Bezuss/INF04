@@ -1,0 +1,14 @@
+Polecenia z egzaminów: 
+Egzamin INF.04 – czerwiec 2022
+W zadaniu dotyczącym aplikacji webowej zdający musiał stworzyć frontend obsługujący zapisy na kursy używając Angular lub React, a do stylowania formularza wykorzystać bibliotekę Bootstrap. 
+
+
+Egzamin INF.04 – czerwiec 2023
+Część praktyczna również zawiera polecenie stworzenia aplikacji internetowej typu frontend w Angular lub React i zastosowania Bootstrapa do stylizacji formularza. 
+
+Instalacja bootstrapa
+
+npm install bootstrap
+
+
+

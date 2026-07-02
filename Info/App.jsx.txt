@@ -1,0 +1,26 @@
+import { useEffect, useState } from "react";
+
+function App() {
+  const [uczniowie, setUczniowie] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/uczniowie")
+      .then(res => res.json())
+      .then(data => setUczniowie(data))
+      .catch(err => console.error(err));
+  }, []);
+
+  return (
+    <div>
+      <h1>Lista uczniów</h1>
+
+      {uczniowie.map((u, index) => (
+        <p key={index}>
+          {u.imie} {u.nazwisko}
+        </p>
+      ))}
+    </div>
+  );
+}
+
+export default App;

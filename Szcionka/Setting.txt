@@ -1,0 +1,46 @@
+(dp это базовая размерная единица)
+
+1. Empty views Activity создаем
+
+1.1 Чтобы сверху было название заходим в res->values->themes->themes.xml и меняем parent на "Theme.MaterialComponents.DayNight.DarkActionBar"
+1.2 В том же месте меняем цвет с помощью <item name="colorPrimary">#7B1FA2</item>
+                                         <item name="colorPrimaryContainer">#7B1FA2</item>
+
+2. Zastosowany typ rozkładu liniowy (Linear / Stack lub inny o tej idei)
+- Usuwam wszystkie elementy i wchodze w Layouts i stwarzam linear layout
+
+3. Elementy aplikacji:
+‒ Napis o treści: „Właściwości czcionki”.
+‒ Napis o treści: „Rozmiar: ”.
+‒ Suwak (SeekBar / Slider).
+‒ Napis cytatu.
+‒ Przycisk o treści: „>>”.
+- - Text -> Textview o nazwie „Właściwości czcionki”
+   - Text -> Textview o nazwie "Rozmiar: "
+   - Widgets -> SeekBar
+   - Text -> PlainText
+   - Buttons -> Button
+
+4. Wszystkie pola są rozciągnięte na szerokość strony
+-  parametr layout_width = match_parent
+
+5.  Zastosowany kolor tła elementów: #558B2F, zgodnie z Obrazem 1a
+- parametr background
+
+6. Zastosowany kolory czcionki: czarny i biały, zgodnie z Obrazem 1a
+-  parametr textColor
+
+7. Czcionka napisu „Właściwości czcionki” ma rozmiar największy i jest pogrubiona
+- parametr textsize:24sp; textStyle: bold
+
+8. Czcionka napisu „Rozmiar:” ma rozmiar średni.
+- parametr textsize:16sp
+
+9.Suwak ma wartość maksymalną 40, jeżeli ustawienie minimum jest wymagane – ustawić wartość 0
+- parametr max: 40
+
+10. Przycisk jest wyśrodkowany oraz jego tekst jest wyśrodkowany i pogrubiony.
+- paremetr layout_gravity: center; textAlligment: center; textStyle: Bold
+
+11. Usun underline
+- parametr style меняем

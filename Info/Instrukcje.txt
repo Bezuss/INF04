@@ -1,0 +1,18 @@
+W folderze backendu instalacja express:
+
+npm init -y
+npm install express mysql2 cors
+
+Uruchomienie backend:
+
+node index.js
+
+sprawdzenie w przeglądarce: http://localhost:3001/uczniowie
+
+--------------------
+Polecenia do VITE
+
+node -v
+npm create vite@latest
+
+npm run dev
